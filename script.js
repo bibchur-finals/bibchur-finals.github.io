@@ -7,28 +7,34 @@ angular.module("swankyChat", [])
     username: "Leela",
     avatar: "https://imgflip.com/s/meme/Futurama-Leela.jpg",
     messages: [
-      "This App Is Made For Someone Who Has Many Problems And Wanted to talk about it"
+      "This App Is Made For Someone Who Has Many Problems And Wanted to talk about it",
+      "Talk With Us"
+      
     ]
   }, {
     id: 1,
     username: "Bender",
     avatar: "http://orig02.deviantart.net/9689/f/2012/027/9/c/mr_bender______classy__by_sgtconker1r-d4nqpzu.png",
     messages: [
-      "This App Is Made For Someone Who Has Many Problems And Wanted to talk about it"
+      "This App Is Made For Someone Who Has Many Problems And Wanted to talk about it",
+      "Talk With Us"
+      
     ]
   }, {
     id: 2,
     username: "Fry",
     avatar: "http://www.wallpaperno.com/thumbnails/detail/20121027/futurama%20fry%201920x1080%20wallpaper_www.wallpaperno.com_68.jpg",
     messages: [
-      "This App Is Made For Someone Who Has Many Problems And Wanted to talk about it"
+      "This App Is Made For Someone Who Has Many Problems And Wanted to talk about it",
+      "Talk With Us"
     ]
   }, {
     id: 3,
     username: 'Zoidberg',
     avatar: "http://images2.fanpop.com/images/photos/3300000/Zoidberg-futurama-3305418-1024-768.jpg",
     messages: [
-      "This App Is Made For Someone Who Has Many Problems And Wanted to talk about it"
+      "This App Is Made For Someone Who Has Many Problems And Wanted to talk about it",
+      "Talk With Us"
     ]
   }];
   
