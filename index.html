@@ -1,59 +1,205 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Suicide Prevention App</title>
-  <link href='https://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"><link rel="stylesheet" href="./style.css">
-
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fira+Sans|Roboto:300,400|Questrial|Satisfy">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
-  <h1 class="rainbow-text">Suicide Prevention App</h1>
-<!-- partial:index.partial.html -->
-<html ng-app='swankyChat' ng-cloak='true'>
-  <div class='container'>
-    <div class='inbox'>
-      <aside>
-        <ul ng-controller='chatCtrl as chat'>
-          <div ng-repeat='chat in chats'>
-            <li ng-click='uid(chat.id)'>
-              <img class='avatar' src='{{chat.avatar}}'>
-              <p class='username'>{{chat.username}}</p>
-            </li>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" onload="myFunction()">
+  <div class="header">
+    <div class="bg-color">
+      <header id="main-header">
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#lauraMenu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Prevent Suicide</a>
+            </div>
+            <div class="collapse navbar-collapse" id="lauraMenu">
+              <ul class="nav navbar-nav navbar-right navbar-border">
+                <li class="active"><a href="#main-header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="app/index.html">App</a></li>
+              </ul>
+            </div>
           </div>
-        </ul>
-      </aside>
-      <main ng-controller='chatCtrl as chat'>
-        <div class='init'>
-          <i class='fa fa-inbox'></i>
-          <h4>Choose a conversation from the left</h4>
-        </div>
-        <div class='loader'>
-          <p></p>
-          <h4>Loading</h4>
-        </div>
-        <!-- Set A Ng Repeat For Our Messages || Check To See If Our Value (Which Is Set Via Ng Click) Is Equal To The Id Of The Message List We Want To Show -->
-        <div class='message-wrap' ng-repeat='message in chats' ng-show='value == message.id'>
-          <!-- Repeat Each Item In The Array Seperately -->
-          <div class='message' ng-repeat='i in message.messages track by $index'>
-            <p>{{i}}</p>
-            <img ng-src='{{message.avatar}}'>
+        </nav>
+      </header>
+      <div class="wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 wow fadeIn delay-05s">
+              <div class="banner-text">
+                <h2>Hi, I am <span>John Jefferson</span> Li,</h2>
+                <p>This Is My <br>Bibchur Final Project</p>
+              </div>
+              <div class="overlay-detail text-center">
+                <a href="#about"><i class="fa fa-angle-down"></i></a>
+              </div>
+            </div>
           </div>
         </div>
-        <footer>
-          <form ng-submit='add()'>
-            <input ng-model='text' placeholder='Enter a message' type='text'>
-            <input type='submit' value='Send'>
-          </form>
-        </footer>
-      </main>
+      </div>
     </div>
   </div>
-</html>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+  <section id="about" class="section-padding wow fadeIn delay-05s">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-right">
+          <h2 class="title-text" style="color: aliceblue;">
+            Suicide<br><span class="deco">Prevention</span> Program
+          </h2>
+        </div>
+        <div class="col-md-6 text-left" style="color: aliceblue;">
+          <div class="about-text">
+            <p></p>
+            <p>&nbsp;</p>
+            <p style="color: aliceblue;">Suicide Prevention Program provides free and confidential emotional support to people in suicidal crisis or emotional distress 24 hours a day, 7 days a week, across the Philippines. The Lifeline is comprised of a national network of over 150 local crisis centers, combining custom local care and resources with national standards and best practices.</p>
+            <p>&nbsp;</p>
+            <ul class="abt-list">
+              <li>- Get Help Now.</li>
+              <li>- Download Our App in PlayStore.</li>
+              <li>- Talk With Our Team.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="portfolio" class="section-padding wow fadeInUp delay-05s">
+    <div class="container">
+      <div class="row">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="testimonial" class="section-padding wow fadeInUp">
+    <div class="container">
+      <div class="row">
+        <h2 class="title text-center">See What Our <span class="deco">Representatives</span> Are Saying ?</h2>
+        <div class="test-sec">
+          <div class="col-sm-4">
+            <blockquote>
+              <p>Speaking to someone, whether by going to a therapist or by attending a support group, can help you feel better and improve your mental health. </p>
+            </blockquote>
+            <div class="carousel-info">
+              <div class="pull-left"> <span class="testimonials-name">John Jefferson Li</span> <span class="testimonials-post">CEO,  Company Inc.</span> </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <blockquote>
+              <p>You don't have to deal with crisis on your own. Those you choose to confide in can provide encouragement and help you through a crisis.</p>
+            </blockquote>
+            <div class="carousel-info">
+              <div class="pull-left"> <span class="testimonials-name">John Jefferson Li</span> <span class="testimonials-post">CEO,  Company Inc.</span> </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <blockquote>
+              <p>A safety plan is designed to guide you through a crisis. As you continue through the steps, you can get help and feel safer. Keep your plan easily accessible in case you have thoughts of hurting yourself.</p>
+            </blockquote>
+            <div class="carousel-info">
+              <div class="pull-left"> <span class="testimonials-name">John Jefferson Li</span> <span class="testimonials-post">CEO,  Company Inc.</span> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="section-padding wow fadeIn delay-05s">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="contact-sec text-center">
+            <h2 class="deco">Want To <span>Talk</span> To Us?</h2>
+            <p>Fill The Required Spaces and a representative will Chat you in our App</p>
+          </div>
+        </div>
+
+        <div class="col-md-8 col-md-push-2">
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+            <div class="form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>
+
+            <div class="text-center"><button type="submit" class="btn btn-primary btn-lg">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <footer class="footer-2 text-center-xs bg--white">
+    <div class="container">
+      <!--end row-->
+      <div class="row">
+        <div class="col-md-6">
+          <div class="footer">
+            <div class="credits">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 text-right">
+          <ul class="social-list">
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-vimeo"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <!--end row-->
+    </div>
+  </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="contactform/contactform.js"></script>
 
 </body>
+
 </html>
